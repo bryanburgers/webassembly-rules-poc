@@ -1,7 +1,7 @@
 Proof-of-concept companion code to a proposal for evaluating business rules
 using WebAssembly.
 
-The proposal is here: <insert once the proposal is published>
+The proposal is here: https://github.com/RESOStandards/transport/discussions/92
 
 ## webassembly-rules-poc
 
