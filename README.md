@@ -34,5 +34,10 @@ WebAssembly validation modules built in three different languages
 
 All three of these languages approximately implement the same example checks.
 
+## rcp19-to-wasm
+
+A tool that takes rules in RCP19 format and builds a wasm blob that conforms to
+the proposed spec. See the README.md in that folder for more information. 
+
 [tinygo]: https://tinygo.org/
 [AssemblyScript]: https://www.assemblyscript.org/

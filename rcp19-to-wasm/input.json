@@ -1,0 +1,28 @@
+{
+  "value": [
+    {
+      "FieldName": "ListPrice",
+      "RuleAction": "ACCEPT",
+      "RuleMessage": "List price must be greater than $0",
+      "RuleExpression": "ListPrice > 0"
+    },
+    {
+      "FieldName": "ClosePrice",
+      "RuleAction": "SET_REQUIRED",
+      "RuleMessage": "ClosePrice is required if MlsStatus is Closed",
+      "RuleExpression": "MlsStatus .IN. SET('Closed')"
+    },
+    {
+      "FieldName": "ClosePrice",
+      "RuleAction": "SET_DISPLAY",
+      "RuleMessage": "ClosePrice is visible if MlsStatus is Closed",
+      "RuleExpression": "MlsStatus .IN. SET('Closed')"
+    },
+    {
+      "FieldName": "ClosePrice",
+      "RuleAction": "SET",
+      "RuleMessage": "ClosePrice is null if MlsStatus is not Closed",
+      "RuleExpression": "IIF(MlsStatus .IN. SET('Closed'), ClosePrice, .EMPTY.)"
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+[workspace]
+members = ['rcp19-to-wasm', 'rcp19-to-wasm-common', 'rcp19-to-wasm-template']
+resolver = "2"
